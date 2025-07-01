@@ -1,0 +1,6 @@
+Installation:
+Pheonix Framework
+Erlang
+Elixir
+Postgres
+Create new app using cursor.
