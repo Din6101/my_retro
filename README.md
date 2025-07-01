@@ -1,2 +1,3 @@
 # my_retro
-Git Repo Quiz
+Software Development Bootcamp Retrospective
+My name is Airuddinsah Bin Ardiyansah
