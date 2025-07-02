@@ -1,1 +1,5 @@
+<<<<<<< HEAD
 Learn how to use git clone, add and commit.
+=======
+Learn how to use git clone, add and commit.
+>>>>>>> 04b9bf2a5c6bce39bc8ea1c017378df97f5fc1f6
