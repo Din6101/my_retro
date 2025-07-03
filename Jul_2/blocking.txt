@@ -1,0 +1,18 @@
+too many error
+**duplicate user solution: using chat gpt & help from other members to solve the problem.
+**Could not find executable phx.server
+**no route path for MyAppWeb.Router matches "/messages/#{@message}..." (Fix: Move your LiveView routes outside /dev)
+
+scope "/", MyAppWeb do
+  pipe_through :browser
+
+  live "/messages", MessageLive.Index, :index
+  live "/messages/new", MessageLive.Index, :new
+  live "/messages/:id/edit", MessageLive.Index, :edit
+
+  live "/messages/:id", MessageLive.Show, :show
+  live "/messages/:id/show/edit", MessageLive.Show, :edit
+end
+
+**Phoenix.Ecto.PendingMigrationError
+Clean and recompile
