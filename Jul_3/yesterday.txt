@@ -1,0 +1,20 @@
+upload changes from cursor to github
+**generate commit message to upload all the changes that has been made**
+
+self study & prepare for tomorrows assignment(presentation)
+mix phx.gen.live
+
+apply command on my_app & run it
+
+apply command mix phx.gen.live Accounts User users name:string age:integer to create table on database
+
+Context module
+Schema & migration
+Routes
+
+Command:
+mix phx.gen.live Accounts User users name:string age:integer (create table for database)
+mix ecto.migrate (migrate file/table into server)
+iex -S mix phx.server (boots up pheonix app, starts HTTP server)
+
+open localhost:4001/ to display my_app on browser
