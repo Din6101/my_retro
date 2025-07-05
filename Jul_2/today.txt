@@ -13,6 +13,12 @@ Schema & migration
 Routes
 
 Command:
+# 1. Install generator jika belum ada
+mix archive.install hex phx_new
+
+# 2. Buat project baru
+mix phx.new coffee_shop
+
 mix phx.gen.live Accounts User users name:string age:integer (create table for database)
 mix ecto.migrate (migrate file/table into server)
 iex -S mix phx.server (boots up pheonix app, starts HTTP server)
