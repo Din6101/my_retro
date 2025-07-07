@@ -1,0 +1,8 @@
+I try to add a few repo names messages and departments.
+Using command:
+>>mix phx.gen.live Accounts User users name:string age:integer
+>>mix ecto.migrate
+>>iex -S mix phx.server
+
+After using mix ecto.migrate, migrations are up already but when in the localhost, it display error.
+** using chatGPT and also try to fix with cursor. Not resolve until now.
