@@ -1,7 +1,7 @@
 Learn how to use git clone, add and commit.
-Upload my_retro to github:
+Upload a folder to my_retro in github:
 >>git add .
 >>git commit -m "Your message"
 >> git push
 
-The command will upload a new folder on my repo.
+The command will upload a new folder on my_retro.
