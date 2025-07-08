@@ -1,1 +1,14 @@
-None.
+Cannot add new column in table user using mix ecto.gen.migrations add_user_details.
+
+apply command: >> mix ecto.gen.migrations add_user_details.
+               >> mix ecto.migrate
+                  **file ada tapi still tidak dapat masuk ke database
+               >> mix ecto.migrations 
+                  **status up
+
+Problem is column are not migrate on database.
+**Solution: buka folder baru third app
+Then apply all command mentioned above.
+
+Error: Solve.
+
