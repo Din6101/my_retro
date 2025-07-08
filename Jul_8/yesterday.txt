@@ -1,0 +1,28 @@
+Yesterdays learning was about CRUD.
+
+CRUD is an acronym that stands for the four basic operations you can perform on persistent data:
+
+1. Create – Add a new record to the database.
+2. Read – Retrieve one or more records from the database.
+3. Update – Modify an existing record.
+4. Delete – Remove a record from the database.
+
+In the context of Elixir and Phoenix, these CRUD operations are typically handled using Ecto, the database wrapper and query generator for Elixir.
+
+Contoh dlm iex:
+create: MyApp.Accounts.create_user(%{name: "Joe", age: 18, phone: 123456})
+
+read: MyApp.Accounts.list_user
+      MyApp.Accounts.get_user!(2)
+
+update: # Langkah 1: Dapatkan pengguna berdasarkan ID
+          iex> user = MyApp.Accounts.get_user!(2)
+
+        # Langkah 2: Atribut baru yang ingin dikemaskini
+          iex> attrs = %{name: "Joe Baru", age: 32}
+
+        # Langkah 3: Kemas kini pengguna
+          iex> MyApp.Accounts.update_user(user, attrs)
+
+delete: user = MyApp.Accounts.get_user!(2)
+        MyApp.Accounts.delete_user(user)
