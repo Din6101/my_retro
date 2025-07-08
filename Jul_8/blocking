@@ -2,7 +2,6 @@ Cannot add new column in table user using mix ecto.gen.migrations add_user_detai
 
 apply command: >> mix ecto.gen.migrations add_user_details.
                >> mix ecto.migrate
-                  **file ada tapi still tidak dapat masuk ke database
                >> mix ecto.migrations 
                   **status up
 
