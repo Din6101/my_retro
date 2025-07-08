@@ -1,1 +1,5 @@
 Presentation for yesterday homework about CRUD.
+
+My part was about READ function in CRUD. It has two function which is get_ & list_user.
+I was explain about get_user.
+>>
