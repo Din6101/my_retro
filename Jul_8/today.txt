@@ -1,6 +1,6 @@
 Presentation for yesterday homework about CRUD.
 
-My part was about READ function in CRUD. It has two function which is get_ & list_user.
+My part was about READ function in CRUD. It has two function which is get_user & list_user.
 
 I was explain about get_user. Below are function to use in iex. We can see all users that has been created.
 >> iex(4)> SecondApp.Accounts.list_users
