@@ -1,5 +1,32 @@
 Presentation for yesterday homework about CRUD.
 
 My part was about READ function in CRUD. It has two function which is get_ & list_user.
-I was explain about get_user.
->>
+
+I was explain about get_user. Below are function to use in iex. We can see all users that has been created.
+>> iex(4)> SecondApp.Accounts.list_users
+    [debug] QUERY OK source="users" db=27.3ms decode=15.8ms queue=1.0ms idle=1200.8ms
+    SELECT u0."id", u0."name", u0."age", u0."inserted_at", u0."updated_at" FROM "users" AS u0 []
+    ↳ :elixir.eval_external_handler/3, at: src/elixir.erl:355
+    [
+    %SecondApp.Accounts.User{
+    __meta__: #Ecto.Schema.Metadata<:loaded, "users">,
+    id: 7,
+    name: "Joe Jambul",
+    age: 18,
+    inserted_at: ~U[2025-07-07 08:46:04Z],
+    updated_at: ~U[2025-07-08 00:57:18Z]
+    }
+    ]
+
+>> iex(5)> SecondApp.Accounts.get_user!(7)
+    [debug] QUERY OK source="users" db=5.0ms queue=9.7ms idle=1298.5ms
+    SELECT u0."id", u0."name", u0."age", u0."inserted_at", u0."updated_at" FROM "users" AS u0 WHERE (u0."id" = $1) [7]
+    ↳ :elixir.eval_external_handler/3, at: src/elixir.erl:355
+    %SecondApp.Accounts.User{
+    __meta__: #Ecto.Schema.Metadata<:loaded, "users">,
+    id: 7,
+    name: "Joe Jambul",
+    age: 18,
+    inserted_at: ~U[2025-07-07 08:46:04Z],
+    updated_at: ~U[2025-07-08 00:57:18Z]
+    }
