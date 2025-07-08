@@ -1,0 +1,6 @@
+Command to use delete user in iex shows error.
+Command to use:
+>> user = MyApp.Accounts.get_user!(2)
+    MyApp.Accounts.delete_user(user)
+
+Solotion from chat GPT and other member.

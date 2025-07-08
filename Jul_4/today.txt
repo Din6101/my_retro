@@ -1,0 +1,9 @@
+Learn to edit webpage using figma.
+Figma is a 
+>>web-based interface design and prototyping tool used primarily for designing user interfaces (UIs), 
+>>user experiences (UX),
+>>collaborative visual design projects. 
+It's especially popular among product designers, UI/UX professionals, and front-end developers.
+
+Use figma to design webpage for my project.
+Using template given in figma.
