@@ -1,0 +1,8 @@
+Self study and prepare for presentation about what we understand about mix phx.gen.live.
+**create slide for presentation**
+  >>mix phx.gen.live Accounts User users name:string age:integer
+  >>mix ecto.migrate
+  >>iex -S mix phx.server
+
+**I try to add repo at my_app. So now I have 3 repo on my_app which is users, messages and department.
+**But its not easy to add another and need to learn and understand more because at users part shows errors and the others are shown.
