@@ -6,3 +6,4 @@ Figma is a
 It's especially popular among product designers, UI/UX professionals, and front-end developers.
 
 Use figma to design webpage for my project.
+Using template given in figma.
