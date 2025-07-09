@@ -1,0 +1,13 @@
+The problem when trying to generate UI after apply the pattern matching function.
+After applying the function, I need to generate it in UI so that it return a messages like "User is Male" or "User is a Female".
+
+Solution:
+So, I get help from other member to add one function in show.html.heex first: 
+  <:item title="Gender">{CoffeeShop.Accounts.user_gender_range(@user)}</:item>
+  <:item title="Age">{CoffeeShop.Accounts.user_age_range(@user)}</:item>
+Then, successfully generate at UI.
+
+Secondly, need to add function in index.html.heex
+  <:col :let={{_id, user}} label="Gender"><%= CoffeeShop.Accounts.user_gender(user) %></:col>
+  <:col :let={{_id, user}} label="Category"><%= CoffeeShop.Accounts.user_age_range(user) %></:col>
+Now, can see the messages after applying the function in user table.
