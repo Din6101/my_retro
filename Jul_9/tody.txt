@@ -1,0 +1,61 @@
+Learn about pattern matching.
+Pattern matching in Elixir is a powerful and fundamental feature that allows you to match and destructure data directly 
+in assignments, function definitions, and case statements.
+
+Examples on elixir:
+def change_user(%User{} = user, attrs \\ %{}) do
+    User.changeset(user, attrs)
+  end
+
+
+  def user_gender_range(%User{gender: gender}) when gender == "Male" do
+    "User is a male"
+  end
+
+  def user_gender_range(%User{gender: gender}) when gender == "Female" do
+    "User is a female"
+  end
+
+  def user_gender_range(_user) do
+    "Unknown gender"
+  end
+
+
+  def user_gender(%User{gender: gender}) do
+    case gender do
+      "Male" -> "User is a male"
+      "Female" -> "User is a female"
+      _ -> "Unknown gender"
+    end
+  end
+
+
+  def user_age_range(%User{age: age}) when age < 18 do
+    "User is a Minor"
+  end
+
+  def user_age_range(%User{age: age}) when age >= 18 and age <= 65 do
+    "User is an Adult"
+  end
+
+  def user_age_range(%User{age: age}) when age >= 66 and age <= 100 do
+    "User is a Senior"
+  end
+
+  def user_age_range(_user) do
+    "Unknown age range"
+  end
+
+We need to apply this function in order to generate match data in our UI. Examples, when we input data on gender column, 
+we can see it generate messages says 
+"User is a Male"
+or "User is a Female".
+
+In order to generate or display it in UI, we need to change function in html.heex to call it
+>> Example in index.html.heex: 
+    <:col :let={{_id, user}} label="Gender"><%= CoffeeShop.Accounts.user_gender(user) %></:col>
+    <:col :let={{_id, user}} label="Category"><%= CoffeeShop.Accounts.user_age_range(user) %></:col>
+
+>> Example in show.html.heex:
+    <:item title="Gender">{CoffeeShop.Accounts.user_gender_range(@user)}</:item>
+    <:item title="Age">{CoffeeShop.Accounts.user_age_range(@user)}</:item>
